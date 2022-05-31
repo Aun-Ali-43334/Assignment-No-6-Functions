@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
+  </head>
+  <body></body>
+  <script>
     // Assignment # 38-44
     // 1. Write a custom function power ( a, b ), to calculate the value of a raised to b.
     //solution:
@@ -17,74 +15,155 @@
     // var pow = + prompt("Enter a power");
     // function power(val,pow) {
     //  console.log(Math.pow(val,pow));
-        
+
     // }
     // power(val,pow);
-    
 
-    
-
-    // 2. Any year is entered through the keyboard. Write a function to 
+    // 2. Any year is entered through the keyboard. Write a function to
     // determine whether the year is a leap year or not.
 
     //solution:
-    
-//     function leapYear() {
-//     var input = +prompt("Enter a Leap year");
-//     var arr = [];
-//     var firstLeapYear = 1600;
-//     var lastLeapYear = 2152;
-//     var check= false;
-//     for(var i = firstLeapYear;i<=lastLeapYear;i+=4){
-//         arr.push(i); //pushing into elements of array
-//     }
-    
-//     // console.log("Length of Array  = ",arr.length);
-//     for(var i=0;i<arr.length;i++){
-//         if(input == arr[i]){
-//             check = true;
-//             break;
-//         }
-//     }
-//     if(check == true){
-//         console.log("Enter Year is a Leap Year");
-//     }
-//     else{
-//         console.log("Enter Year is Not a Leap Year");
-//     }
-// }
-// leapYear();
-       
 
-// 3. If the lengths of the sides of a triangle are denoted by a, b, and
-// c, then area of triangle is given by
-// area = S(S − a)(S − b)(S − c)
-// where, S = ( a + b + c ) / 2
-// Calculate area of triangle using 2 functions
-//solution:
+    //     function leapYear() {
+    //     var input = +prompt("Enter a Leap year");
+    //     var arr = [];
+    //     var firstLeapYear = 1600;
+    //     var lastLeapYear = 2152;
+    //     var check= false;
+    //     for(var i = firstLeapYear;i<=lastLeapYear;i+=4){
+    //         arr.push(i); //pushing into elements of array
+    //     }
 
-function findS(a,b,c) {
-    var a1 = a;
-    var b1= b;
-    var c1 = c;
-    var s;
-    
-    s = (a1+b1+c1)/2; // calculate value of 's'
-    console.log(s);
+    //     // console.log("Length of Array  = ",arr.length);
+    //     for(var i=0;i<arr.length;i++){
+    //         if(input == arr[i]){
+    //             check = true;
+    //             break;
+    //         }
+    //     }
+    //     if(check == true){
+    //         console.log("Enter Year is a Leap Year");
+    //     }
+    //     else{
+    //         console.log("Enter Year is Not a Leap Year");
+    //     }
+    // }
+    // leapYear();
 
-    function findArea() {
-        var area = (s)*((s-a1)*(s-b1)*(s-c1));
-        console.log(area);    
-    
-    }
-    findArea();
-}
-findS(2,4,6);
-    
-    
-        
-        
-    
-        
-        </script>
-        </html>
+    // 3. If the lengths of the sides of a triangle are denoted by a, b, and
+    // c, then area of triangle is given by
+    // area = S(S − a)(S − b)(S − c)
+    // where, S = ( a + b + c ) / 2
+    // Calculate area of triangle using 2 functions
+    //solution:
+
+    // function findS(a,b,c) {
+    //     var a1 = a;
+    //     var b1= b;
+    //     var c1 = c;
+    //     var s;
+    //     s = (a1+b1+c1)/2; // calculate value of 's'
+    //     console.log(s);
+    //     function findArea() {
+    //         var area = (s)*((s-a1)*(s-b1)*(s-c1));
+    //         console.log(area);
+    //     }
+    //     findArea();
+    // }
+    // findS(2,4,6);
+
+    // 4. Write a function that receives marks received by a student in 3 subjects and returns the average and percentage of these marks. there should be 3 functions one is the mainFunction and other are for average and percentage. Call those functions from mainFunction and display result in mainFunction.
+
+    //solution:
+
+    // function mainFunc() {
+    //   var sub1 = +prompt("Enter Marks of subject 1");
+    //   var sub2 = +prompt("Enter Marks of subject 2");
+    //   var sub3 = +prompt("Enter Marks of subject 3");
+    //   var avg;
+    //   function average() {
+    //     // console.log(sub1);
+    //     avg = (sub1 + sub2 + sub3) / 300;
+    //     console.log("Average  = ", avg);
+    //   }
+    //   average();
+    //   function percentage() {
+          
+    //     var per = avg * 100;
+    //     console.log("Percentage = ",per,"%");
+    //   }
+    //   percentage();
+    // }
+    // mainFunc();
+
+    // 5. You have learned the function indexOf. Code your own custom function that will perform the same functionality. You can code for single character as of now.
+
+    //solution:
+
+    // 6. Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long
+
+    //solution:
+    // function disemvowel(str) {
+    //   var strArr = str.split('');
+    //   for (var x = 0; x < str.length; x++) {
+    //     var char = str[x].toLowerCase();
+    //     if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+    //       strArr[x] = '';
+    //     }
+    //   }
+    //   return strArr.join('');
+    // }
+
+    // 7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text. For example, in the sentence
+    // “Pleases read this application and give me gratuity”
+    // Such occurrences are ea, ea, ui.
+    //solution:
+
+    // function findOccurrences() {
+    //   var str = "Pleases read this application and give me gratuity";
+    //   var chars = str.toLowerCase().split("");
+    //   var count = 0;
+
+    //   // Loop over every character
+    //   for(let i = 0; i < chars.length - 1; i++) {
+    //     var char = chars[i];
+    //     var next = chars[i + 1];
+
+    //     // Increase count if both characters are any of the following: aeiou
+    //     if(isCorrectCharacter(char) && isCorrectCharacter(next)) {
+    //       count++
+    //     }
+    //   }
+
+    //   return count;
+    // }
+
+    // // Check if a character is any of the following: aeiou
+    // function isCorrectCharacter(char) {
+    //   switch (char) {
+    //     case 'a':
+    //     case 'e':
+    //     case 'i':
+    //     case 'o':
+    //     case 'u':
+    //       return true;
+    //     default:
+    //       return false;
+    //   }
+    // }
+    // var found = findOccurrences();
+    // console.log(found);
+
+    // 8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters.
+
+    //solution:
+
+    // 9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
+
+    //solution:
+
+    // 10. A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
+
+    //solution:
+  </script>
+</html>
